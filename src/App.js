@@ -133,7 +133,7 @@ class App extends React.Component {
     }
 
     return (
-      <div>
+      <div className="app">
         <h1>todos</h1>
         <Itemcreator createItem={this.createItem} />
         {todoItems}

@@ -1,9 +1,8 @@
 .todoItem {
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  width: 350px;
   position: relative;
+  border: 1px solid black;
 }
 
 .checked {
@@ -24,4 +23,10 @@
 
 .todoItem:hover .remove {
   display: block;
+}
+
+.app {
+  min-width: 350px;
+  width: 3%;
+  margin: auto;
 }
