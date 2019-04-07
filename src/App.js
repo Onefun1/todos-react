@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import TodosList from "./todosList.js";
 import Todoitem from "./components/Todoitem.js";
 import Itemcreator from "./components/Itemcreator";
@@ -134,18 +134,16 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <h1>todos</h1>
-        <Itemcreator createItem={this.createItem} />
-        {todoItems}
+        <h1> todos </h1> <Itemcreator createItem={this.createItem} />{" "}
+        {todoItems}{" "}
         <SummaryItems
           count={this.state.todos.length}
           checkedCount={this.getCheckedCount()}
           setDefault={this.setDefault}
-        />
+        />{" "}
       </div>
     );
   }
 }
 
 export default App;
-
